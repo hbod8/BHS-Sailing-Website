@@ -1,0 +1,5 @@
+[[file:LICENSE][https://img.shields.io/badge/License-MIT-blue.svg]]
+* BHS Sailing Website
+The new website for the BHS Sailing Team
+** Goals
+- rebuild the existing website from the ground up.
