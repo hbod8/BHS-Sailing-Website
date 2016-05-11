@@ -109,6 +109,10 @@ input, select {
     vertical-align:middle;
 }
 
+html {
+    background-color: #166baa;
+}
+
 body {
     top: 0px;
     height: 100%;
