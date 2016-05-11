@@ -99,6 +99,12 @@ hr {
 
 /* End CSS Reset */
 
+/* 
+Start formatting
+Author(s): Harrison Saliba, Kawin Nikomborirak
+*/
+
+
 input, select {
     vertical-align:middle;
 }
