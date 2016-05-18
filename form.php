@@ -1,0 +1,3 @@
+<?php
+$news="news.xml";
+?>;
