@@ -10,8 +10,10 @@
         
         if ($_SERVER["REQUEST_METHOD"] == "POST")
         {
-            echo 'sha: ' + sha1($_POST["pass"]);
-            echo 'key: ' + $key;
+            echo '<p>sha: ';
+            echo sha1($_POST["pass"]);
+            echo 'key: ';
+            echo $key;
             $pass = $_POST["pass"];
             $_SESSION["pass"] = $_POST["pass"];
             if (sha1($pass) == $key)
