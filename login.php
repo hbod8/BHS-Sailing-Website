@@ -2,7 +2,7 @@
     <head></head>
     <body>
         <?php
-        $keyFile = fopen("/var/key.txt", "r") or die("Unable to get hash.");
+        $keyFile = fopen("secure/key.txt", "r") or die("Unable to get hash.");
         $key = fread($keyFile, filesize("key.txt"));
         fclose($keyfile);
         
