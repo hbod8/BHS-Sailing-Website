@@ -3,17 +3,13 @@
     <body>
         <?php
         $keyFile = fopen("secure/key.txt", "r") or die("Unable to get hash.");
-        $key = fread($keyFile, filesize("key.txt"));
+        $key = fread($keyFile, filesize("secure/key.txt"));
         fclose($keyfile);
         
         session_start();
         
         if ($_SERVER["REQUEST_METHOD"] == "POST")
         {
-            echo '<p>sha: ';
-            echo sha1($_POST["pass"]);
-            echo 'key: ';
-            echo $key;
             $pass = $_POST["pass"];
             $_SESSION["pass"] = $_POST["pass"];
             if (sha1($pass) == $key)

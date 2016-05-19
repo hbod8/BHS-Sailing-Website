@@ -3,7 +3,7 @@
     <body>
         <?php
         $keyFile = fopen("secure/key.txt", "r") or die("Unable to get hash.");
-        $key = fread($keyFile, filesize("key.txt"));
+        $key = fread($keyFile, filesize("secure/key.txt"));
         fclose($keyfile);
         
         session_start();
