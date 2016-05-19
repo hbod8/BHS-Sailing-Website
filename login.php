@@ -3,9 +3,12 @@
     <body>
         <?php
         
+        session_start();
+        
         if ($_SERVER["REQUEST_METHOD"] == "POST")
         {
             $pass = $_POST["pass"];
+            $_SESSION["pass"] = $_POST["pass"];
             if (sha1($pass) == '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8')
             {
                 echo '<p>logging in</p>';
