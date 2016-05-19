@@ -2,6 +2,9 @@
     <head></head>
     <body>
         <?php
+        $keyFile = fopen("key.txt", "r") or die("Unable to get hash.");
+        $key = fread($keyFile, filesize("key.txt"));
+        fclose($keyfile);
         
         session_start();
         
@@ -9,7 +12,7 @@
         {
             $pass = $_POST["pass"];
             $_SESSION["pass"] = $_POST["pass"];
-            if (sha1($pass) == '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8')
+            if (sha1($pass) == $key)
             {
                 echo '<p>logging in</p>';
                 echo '<script>window.location = \'http://harry.technology/form.php\'</script>';

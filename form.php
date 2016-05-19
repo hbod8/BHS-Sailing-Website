@@ -2,16 +2,22 @@
     <head></head>
     <body>
         <?php
+        $keyFile = fopen("key.txt", "r") or die("Unable to get hash.");
+        $key = fread($keyFile, filesize("key.txt"));
+        fclose($keyfile);
         
         session_start();
         
-        if (sha1($_SESSION['pass']) != '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8')
+        if (sha1($_SESSION['pass']) != $key)
         {
             exit('bad passkey');
             session_unset();
             session_destroy();
         }
-        echo '<p>logged in</p>'
+        echo '<p>logged in</p>';
+        
+        
+        
         ?>
     </body>
 </html>
