@@ -1,13 +1,18 @@
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    </head>
     <body>
+        <center>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <p>Password: </p><input type="password" name="pass">
+        </form>
         <?php
         $keyFile = fopen("secure/key.txt", "r") or die("Unable to get hash.");
         $key = fread($keyFile, filesize("secure/key.txt"));
         fclose($keyfile);
-        
         session_start();
-        
         if ($_SERVER["REQUEST_METHOD"] == "POST")
         {
             $pass = $_POST["pass"];
@@ -17,12 +22,12 @@
                 echo '<p>logging in</p>';
                 echo '<script>window.location = \'http://harry.technology/form.php\'</script>';
             }
+            else
+            {
+                echo '<p>WRONG PASSWORD</p>';
+            }
         }
-        
         ?>
-        
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            <p>Password: </p><input type="password" name="pass">
-        </form>
+        </center>
     </body>
 </html>

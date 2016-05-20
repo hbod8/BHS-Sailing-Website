@@ -16,9 +16,15 @@
         }
         echo '<p>logged in</p>';
         
-        
+        if ($_POST['logout'])
+        {
+            session_unset();
+        }
         
         ?>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <input type="submit" class="button" name="logout" />
+        </form>
     </body>
 </html>
 
