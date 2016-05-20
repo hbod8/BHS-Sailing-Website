@@ -23,7 +23,7 @@
         
         ?>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            <input type="submit" class="button" name="logout" />
+            <input type="submit" class="button" name="logout" value="logout" />
         </form>
     </body>
 </html>
