@@ -16,7 +16,7 @@
                 session_destroy();
             }
             echo '<p>logged in</p>';
-
+            // checks if user presses logout button, if true, then clear session varibles
             if ($_POST['logout'])
             {
                 session_unset();
