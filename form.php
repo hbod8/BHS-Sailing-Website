@@ -21,12 +21,19 @@
             {
                 session_unset();
             }
-        //form
-        $newsFile = fopen("news.xml", "r")
+
+            /* form */
+
+            $newsFile = fopen("news.xml", "r");
         ?>
+        <form>
+            Title:<br>
+            <input type="text" name="title">
+            Post:<br>
+            <input type="text" name="post">
+        </form>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <input type="submit" class="button" name="logout" value="logout" />
         </form>
     </body>
 </html>
-
