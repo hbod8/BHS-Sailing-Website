@@ -17,7 +17,7 @@
             <h1>BHS Sailing</h1>
             <a href="index.html"><img alt="BHS_Burgee" src="images/burgee.png"></a>
             <nav>
-                <div id="navitem"><a id="navlink" href="index.html"><p id="navtext">News</p></a></div>
+                <div id="navitem"><a id="navlink" href="index.php"><p id="navtext">News</p></a></div>
                 <div id="navitem"><a id="navlink" href="team.html"><p id="navtext">Team</p></a></div>
                 <div id="navitem"><a id="navlink" href="coaches.html"><p id="navtext">Coaches</p></a></div>
                 <div id="navitem"><a id="navlink" href="equipment.html"><p id="navtext">Equipment</p></a></div>
@@ -29,13 +29,20 @@
             </nav>
         </header>
         <div id="content">
-            <div id="subtitle"><h1>The Team</h1></div>
-            <div  id="imageheader"><img src="images/team2016.jpg"></div>
-            <p>The Bainbridge High School Sailing Team fosters growth in the areas of sailing skills, responsibility, respect, and character.  See "Sailor Attributes" document. These attributes and the ability to work together to achieve a common goal are important life skills.  We operate under the philosophy that every Team member is important to the Team's success and an asset to the Team in its efforts to achieve excellence.  The most important sailor is always "the Team."</p>
-            <p>Currently, in compliance with Washington Interscholastic Activities Association and Bainbridge High School rules, the Team practices in the spring sports season, because two of the three High School (Interscholastic Sailing Association) national championships are held in the spring.<p>
-            <p>If a Team member is interested in the third national championship single-handed sailing as opposed to the double-handed events of the spring  then practice in the fall is allowed, as the District eliminations and national championship are held in the fall.  Many Team members choose to sail in the Bainbridge Island Metro Park and Recreation District open fall sailing program in order to keep their skills sharp.  The BIMPRD program is not to be confused with Team practice.</p>
-            <p>During the spring competition season, regular attendance at all Team practices is required of all Team members. See link to Practices</p>
+            <div id="subtitle"><h1>News</h1></div>
+            <div  id="imageheader"><img src="images/news-titleimage.jpg"></div>
+            <?php
             
+            $data = simplexml_load_file("newsdata.xml");
+            
+            foreach ($data->announcement as $announcement)
+            {
+                echo "<h4>" . $announcement->title . "</h4>";
+                echo "<p id=\"author\">" . $announcement->author . "</p>";
+                echo "<p>" . $announcement->content . "<p>";
+            }
+            
+            ?>
         </div>
         <footer>
             <h4>Our Sponsors</h4>

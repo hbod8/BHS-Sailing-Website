@@ -145,9 +145,15 @@ nav {
     margin-top: 20px;
 }
 
-#content>p,#content ul,#content ol {
+#content>p {
     margin-bottom: 20px;
     margin-left: 20px;
+    margin-right: 30px;
+}
+
+#content ul,#content ol {
+    margin-bottom: 20px;
+    margin-left: 30px;
     margin-right: 30px;
 }
 
