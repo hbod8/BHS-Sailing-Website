@@ -187,10 +187,19 @@ nav {
     font-size: .9em;
 }
 
-#date,#author {
+#caption {
+    font-size: 1em;
+}
+
+#date,#author,#caption {
     margin-bottom: .4em;
     margin-left: .4em;
     margin-right: 24px;
+}
+
+#newsimage {
+    height: 500px;
+    max-width: inherit;
 }
 
 /* nc refers to news content, it is shortened for easier XML editing */
