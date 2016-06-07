@@ -162,8 +162,7 @@ nav {
 
 #content>p,#content>h1,#content>h2,#content>h3,#content>h4,#content>h5,#content>h6 {
     margin-bottom: 1.2em;
-    margin-left: 1.2em;
-    margin-right: 24px;
+    margin-left: 24px;
 }
 
 #content>h1,#content>h2,#content>h3,#content>h4,#content>h5,#content>h6 {
@@ -173,8 +172,7 @@ nav {
 
 #content ul,#content ol {
     margin-bottom: 2em;
-    margin-left: 2em;
-    margin-right: 24px;
+    margin-left: 24px;
 }
 
 #author {
@@ -193,14 +191,13 @@ nav {
 
 #date,#author,#caption {
     margin-bottom: .4em;
-    margin-left: .4em;
-    margin-right: 24px;
+    margin-left: 24px;
 }
 
 #newsimage {
     height: 400px;
     max-width: inherit;
-    margin-right: 24px;
+    margin-left: 24px;
 }
 
 /* nc refers to news content, it is shortened for easier XML editing */
