@@ -182,11 +182,13 @@ nav {
     font-size: .9em;
 }
 
-#newscontent {
+/* nc refers to news content, it is shortened for easier XML editing */
+
+#nc {
     text-indent: 2em;
 }
 
-#newscontent br {
+#nc br {
     margin-bottom: 1em;
 }
 
