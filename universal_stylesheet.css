@@ -198,8 +198,9 @@ nav {
 }
 
 #newsimage {
-    height: 500px;
+    height: 400px;
     max-width: inherit;
+    margin-right: 24px;
 }
 
 /* nc refers to news content, it is shortened for easier XML editing */

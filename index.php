@@ -41,7 +41,7 @@
                 echo "<h2>" . $announcement->title . "</h2>";
                 echo "<p id=\"author\">" . $announcement->author . "</p>";
                 echo "<p id=\"date\">" . $announcement->date->event . "</p>";
-                echo "<p id=\"nc\">" . $announcement->content . "<p>";
+                echo "<p id=\"nc\">" . $announcement->content . "</p>";
                 foreach ($announcement->media->image as $image)
                 {
                     echo "<image id=\"newsimage\" src=\"" . $image->url . "\">";
