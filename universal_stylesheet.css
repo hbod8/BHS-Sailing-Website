@@ -55,15 +55,30 @@ footer {
 h1 {
     font-size: 2.8em;
 }
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.625em;
+}
+h4 {
+    font-size: 1.1em;
+}
+h5 {
+    font-size: .625em;
+}
+h6 {
+    font-size: .5em;
+}
 
 /* Title/Head settings */
 
 header h1 {
     float: left;
-    padding-top: .625em;
-    padding-left: .625em;
-    padding-bottom: .625em;
-    padding-right: 1.875em;
+    padding-top: .5em;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
 }
 
 header img {
@@ -105,7 +120,7 @@ nav {
 }
 
 #navitem:hover {
-    border-bottom: .1em solid #000;
+    border-bottom: .3em solid #000;
 }
 
 /* Content settings */
@@ -168,7 +183,7 @@ nav {
 }
 
 #newscontent {
-    text-indent: 1em;
+    text-indent: 2em;
 }
 
 #newscontent br {
