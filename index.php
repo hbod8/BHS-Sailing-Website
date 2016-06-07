@@ -44,7 +44,7 @@
                 echo "<p id=\"nc\">" . $announcement->content . "<p>";
                 foreach ($announcement->media->image as $image)
                 {
-                    echo "<image id=\"#newsimage\" src=\"" . $image->url . "\">";
+                    echo "<image id=\"newsimage\" src=\"" . $image->url . "\">";
                     echo "<p id=\"caption\">" . $image->caption . "</p>";
                 }
             }
