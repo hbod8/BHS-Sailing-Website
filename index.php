@@ -37,9 +37,10 @@
             
             foreach ($data->announcement as $announcement)
             {
-                echo "<h4>" . $announcement->title . "</h4>";
+                echo "<h2>" . $announcement->title . "</h2>";
                 echo "<p id=\"author\">" . $announcement->author . "</p>";
-                echo "<p>" . $announcement->content . "<p>";
+                echo "<p id=\"date\">" . $announcement->date->event . "</p>"
+                echo "<p id=\"newscontent\">" . $announcement->content . "<p>";
             }
             
             ?>
