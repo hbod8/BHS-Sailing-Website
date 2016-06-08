@@ -22,12 +22,12 @@
                 $_SESSION["pass"] = $_POST["pass"];
                 if (sha1($pass) == $key)
                 {
-                    echo '<p>logging in</p>';
-                    echo '<script>window.location = \'http://harry.technology/form.php\'</script>';
+                    echo '<div class="alert alert-info" role="alert"><p>logging in</p></div>';
+                    echo '<script>window.location = \'form.php\'</script>';
                 }
                 else
                 {
-                    echo '<p>WRONG PASSWORD</p>';
+                    echo "<div class=\"alert alert-warning\"><p>WRONG PASSWORD</p></div>";
                 }
             }
         ?>

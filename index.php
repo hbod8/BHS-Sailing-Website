@@ -35,10 +35,10 @@
             
             $data = simplexml_load_file("newsdata.xml");
             
+            echo "<div id=\"news\">";
             foreach ($data->announcement as $announcement)
             {
-                echo "<hr>";
-                echo "<h2>" . $announcement->title . "</h2>";
+                echo "<h3>" . $announcement->title . "</h3>";
                 echo "<p id=\"author\">" . $announcement->author . "</p>";
                 echo "<p id=\"date\">" . $announcement->date->event . "</p>";
                 echo "<p id=\"nc\">" . $announcement->content . "</p>";
@@ -47,7 +47,9 @@
                     echo "<image id=\"newsimage\" src=\"" . $image->url . "\">";
                     echo "<p id=\"caption\">" . $image->caption . "</p>";
                 }
+                echo "<hr>";
             }
+            echo "</div>";
             
             ?>
         </div>
