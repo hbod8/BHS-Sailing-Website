@@ -1,10 +1,9 @@
-[[file:LICENSE][https://img.shields.io/badge/License-MIT-blue.svg]]
-* BHS Sailing Website
+# BHS Sailing Website
 The new website for the BHS Sailing Team
-** Goals
+## Goals
 - rebuild the existing website from the ground up.
 
-** Steps to reach goals
+## Steps to reach goals
 - Add colorscheme.
 ![alt][y]
 - Create news system in php.
