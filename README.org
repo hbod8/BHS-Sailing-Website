@@ -3,3 +3,9 @@
 The new website for the BHS Sailing Team
 ** Goals
 - rebuild the existing website from the ground up.
+
+**Steps to reach goals
+- Add colorscheme.
+- Create news system in php.
+- Have a login to allow for news editing.
+- Mobile friendly.
