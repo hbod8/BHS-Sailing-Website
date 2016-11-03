@@ -5,11 +5,16 @@ The new website for the BHS Sailing Team
 - rebuild the existing website from the ground up.
 
 ** Steps to reach goals
-- Add colorscheme. ![alt][y]
-- Create news system in php. ![alt][y]
-- Have a login to allow for news editing. ![alt][n]
-- Mobile friendly. ![alt][n]
-- Add calender. ![alt][y]
+- Add colorscheme.
+![alt][y]
+- Create news system in php.
+![alt][y]
+- Have a login to allow for news editing.
+![alt][n]
+- Mobile friendly.
+![alt][n]
+- Add calender.
+![alt][y]
 
-[y]: https://github.com/hbod8/APCS-Website/blob/master/checkbox.gif?raw=true
-[n]: https://github.com/hbod8/APCS-Website/blob/master/images.png?raw=true
+[y]: https://github.com/hbod8/APCS-Website/blob/master/checkbox.gif?raw=true "text"
+[n]: https://github.com/hbod8/APCS-Website/blob/master/images.png?raw=true "text"
