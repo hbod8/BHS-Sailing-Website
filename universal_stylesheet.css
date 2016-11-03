@@ -98,7 +98,7 @@ nav {
 #navitem {
     display: block;
     float: left;
-    /* Use "calc(100% / [number of rows]) to make navbar items correct size */
+    /* Use "calc(100% / [number of cols]) to make navbar items correct size */
     width: calc(100% / 9);
     text-align: center;
     background-color: #efde81;
