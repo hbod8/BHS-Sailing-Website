@@ -2,18 +2,5 @@
 The new website for the BHS Sailing Team
 ## Goals
 - rebuild the existing website from the ground up.
-
-## Steps to reach goals
-- Add colorscheme.
-![alt][y]
-- Create news system in php.
-![alt][y]
-- Have a login to allow for news editing.
-![alt][n]
-- Mobile friendly.
-![alt][n]
-- Add calender.
-![alt][y]
-
-[y]: https://github.com/hbod8/APCS-Website/blob/master/checkbox.gif?raw=true "text"
-[n]: https://github.com/hbod8/APCS-Website/blob/master/images.png?raw=true "text"
+## Description
+A website that has a built in editor that is password protected.  The passwords will be stored on the server with the sha1 hash in key.txt, this is set defualt to 'passkey'.  The base information for all news posts are stored in newsdata.xml, the format is pretty stright forward, if you are encountering errors search XML syntax.
