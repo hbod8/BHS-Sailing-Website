@@ -1,4 +1,3 @@
-echo '
 <h4>Our Sponsors</h4>
 <hr>
 <a href="http://www.biparksfoundation.org/ " target="_blank" alt="BHS Sailing Team Supporter - Bainbridge Island Parks Foundation"> <img title="Bainbridge Island Parks Foundation" alt="BHS Sailing Team Supporter - Bainbridge Island Parks Foundation" src="http://bhssailing.net/wp-content/themes/BHS-Sailing/img/parks-min.jpg"><br><p>Bainbridge Island Parks Foundation</p></a>
@@ -11,4 +10,3 @@ echo '
 <a href="http://bainbridgecf.org/" target="_blank" alt="BHS Sailing Team Supporter - Bainbridge Community Foundation"> <img title="Bainbridge Community Foundation" alt="BHS Sailing Team Supporter - Bainbridge Community Foundation" src="http://bhssailing.net/wp-content/themes/BHS-Sailing/img/image05.jpg"><br><p>Bainbridge Community Foundation</p></a>
 <a href="http://www.sycfoundation.org/" target="_blank" alt="BHS Sailing Team Supporter - SYC Foundation"> <img title="SYC Foundation" alt="BHS Sailing Team Supporter - SYC Foundation" src="http://bhssailing.net/wp-content/themes/BHS-Sailing/img/image07.jpg"><br><p>SYC Foundation</p></a>
 <p>(c) 2016 Harrison Saliba</p>
-'

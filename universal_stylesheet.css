@@ -36,10 +36,14 @@ html {
 body {
     top: 0px;
     padding: 0;
+    width: 832px;
+    margin: auto;
+/*
     margin-top: 10px;
     margin-bottom: 0px;
     margin-left: 10%;
     margin-right: 10%;
+*/
     background-color: #feffc1;
     box-shadow: 0em 0em .625em #000;
 }
