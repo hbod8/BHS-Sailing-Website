@@ -5,9 +5,6 @@
     </head>
     <body>
         <center>
-        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            <p>Password: </p><input type="password" name="pass">
-        </form>
         <?php
             //read stored key
             $keyFile = fopen("secure/key.txt", "r") or die("Unable to get hash.");
@@ -31,6 +28,9 @@
                 }
             }
         ?>
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <p>Password: </p><input type="password" name="pass">
+        </form>
         </center>
     </body>
 </html>
